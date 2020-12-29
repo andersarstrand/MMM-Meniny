@@ -1,10 +1,10 @@
 # MMM-Meniny
-Slovak name of day (request of Maros)
+Swedish name of day (namnsdag) (fork from https://github.com/eouia/MMM-Meniny)
 
 ## Installation
 ```shell
 cd ~/MagicMirror/modules
-git clone https://github.com/eouia/MMM-Meniny
+git clone https://github.com/andersarstrand/MMM-Meniny
 ```
 
 ## Configuration
@@ -13,13 +13,15 @@ git clone https://github.com/eouia/MMM-Meniny
   module: "MMM-Meniny",
 	position: "top_left",
 	config: {
-	  message: "Today is <i>$TODAY$</i>. <br/> Tomorrow is <i>$TOMORROW$</i>."
+	  //message: "Today is <i>$TODAY$</i>. <br/> Tomorrow is <i>$TOMORROW$</i>."
+	  message: "Namnsdag idag: <i>$TODAY$</i>. <br/> Namnsdag imorgon: <i>$TOMORROW$</i>."
     // you can use $TODAY$ as name of today, $TOMORROW$ as name of tomorrow.
 	}
 },
 ```
 
-I haven't fully tested it.
+I have been running this for year and it look fine.
 
 ## Issues
-There are some undefined dates, like `01 Jan.`, I don't know Slovak calendar system, so I cannot define them. You'd better fulfill missed dates by yourself.
+Days that has no name usually has a description in sweden. Like `01 Jan` is set to  "(ingen namnsdag) Nyårsdagen"
+
